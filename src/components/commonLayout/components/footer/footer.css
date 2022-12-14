@@ -1,0 +1,88 @@
+.footer-container {
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1141px;
+  height: 128px;
+  margin: auto;
+  margin-top: 165px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 86px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-address p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-nav p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer-socmed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-socmed p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer-socmed__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-copyright p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer-copyright__logo {
+  width: 100px;
+  height: 34px;
+  background-color: #0d28a6;
+}

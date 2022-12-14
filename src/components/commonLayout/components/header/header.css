@@ -1,0 +1,38 @@
+.header-container {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.header-content {
+  max-width: 1055px;
+  height: 35px;
+  margin: auto;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 100px;
+  height: 34px;
+  background-color: #0d28a6;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-nav__text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
