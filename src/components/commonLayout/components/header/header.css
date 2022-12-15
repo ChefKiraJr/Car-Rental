@@ -3,13 +3,14 @@
   width: 100%;
   position: fixed;
   top: 0;
+  background-color: #f1f3ff;
 }
 
 .header-content {
-  max-width: 1055px;
+  max-width: 1168px;
   height: 35px;
   margin: auto;
-  margin-top: 24px;
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,10 +27,11 @@
   flex-direction: row;
   align-items: center;
   gap: 32px;
+  margin-right: 113px;
 }
 
-.header-nav__text {
-  font-family: "Arial";
+.header-nav p {
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

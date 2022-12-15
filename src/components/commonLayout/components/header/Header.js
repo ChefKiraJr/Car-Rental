@@ -1,5 +1,5 @@
-import React from "react";
-import "./header.css";
+import React from 'react';
+import './header.css';
 
 const Header = () => {
   return (
@@ -7,10 +7,10 @@ const Header = () => {
       <div className="header-content">
         <div className="header-logo"></div>
         <div className="header-nav">
-          <div className="header-nav__text">Our Service</div>
-          <div className="header-nav__text">Why Us</div>
-          <div className="header-nav__text">Testimonial</div>
-          <div className="header-nav__text">FAQ</div>
+          <p>Our Service</p>
+          <p>Why Us</p>
+          <p>Testimonial</p>
+          <p>FAQ</p>
         </div>
       </div>
     </div>

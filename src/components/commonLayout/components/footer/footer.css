@@ -22,7 +22,7 @@
 }
 
 .footer-address p {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -37,7 +37,7 @@
 }
 
 .footer-nav p {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -52,7 +52,7 @@
 }
 
 .footer-socmed p {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -63,7 +63,7 @@
 .footer-socmed__logo {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 14px;
 }
 
 .footer-copyright {
@@ -73,7 +73,7 @@
 }
 
 .footer-copyright p {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
