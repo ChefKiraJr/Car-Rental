@@ -1,3 +1,7 @@
 const Testt = () => {
-  return <></>
- )
+  return <></>;
+};
+
+const Testing = () => {
+  return <></>;
+};
