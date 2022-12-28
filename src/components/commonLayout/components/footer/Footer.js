@@ -1,12 +1,12 @@
-import React from "react";
-import "./footer.css";
+import React from 'react';
+import './footer.css';
 import {
   FacebookLogo,
   InstagramLogo,
   TwitterLogo,
   MailLogo,
   TwitchLogo,
-} from "./Dummy";
+} from './Dummy';
 
 const Footer = () => {
   return (

@@ -7,7 +7,7 @@ const OurServices = () => {
   return (
     <div className="our-service__container">
       <div className="our-service__content">
-        <img src={serviceImage} alt="service" />
+        <img src={serviceImage} alt="service" className="our-service__image" />
         <div className="our-service__information">
           <div className="our-service__information-header">
             Best Car Rental for any kind of trip in (Lokasimu)!

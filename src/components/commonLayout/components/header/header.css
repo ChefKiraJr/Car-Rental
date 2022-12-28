@@ -3,6 +3,7 @@
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #f1f3ff;
 }
 
@@ -11,6 +12,7 @@
   height: 35px;
   margin: auto;
   margin-top: 25px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

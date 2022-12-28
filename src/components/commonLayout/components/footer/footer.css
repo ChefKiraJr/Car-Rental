@@ -1,15 +1,18 @@
 .footer-container {
   width: 100%;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding-left: 16px;
+  padding-right: 76px;
+  padding-bottom: 50px;
 }
 
 .footer-content {
   max-width: 1141px;
   height: 128px;
   margin: auto;
-  margin-top: 165px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
   gap: 86px;
@@ -63,7 +66,7 @@
 .footer-socmed__logo {
   display: flex;
   flex-direction: row;
-  gap: 14px;
+  gap: 16px;
 }
 
 .footer-copyright {
@@ -85,4 +88,14 @@
   width: 100px;
   height: 34px;
   background-color: #0d28a6;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    margin-top: 50px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
