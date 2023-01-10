@@ -1,8 +1,17 @@
-import React from "react";
-import "./carDetail.css";
+import React from 'react';
+import CommonLayout from '../../components/commonLayout/CommonLayout';
+import './carDetail.css';
+import CarInformation from './components/carInformation/CarInformation';
+import DetailForm from './components/detailForm/DetailForm';
 
 const CarDetail = () => {
-  return <div>This Is Car Detail Page</div>;
+  return (
+    <CommonLayout>
+      <div className="car-detail__header"></div>'
+      <DetailForm />
+      <CarInformation />
+    </CommonLayout>
+  );
 };
 
 export default CarDetail;

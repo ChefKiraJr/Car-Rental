@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 import CommonLayout from '../../components/commonLayout/CommonLayout';
 import CtaBanner from './components/ctaBanner/CtaBanner';
 import Faq from './components/faq/Faq';
@@ -9,13 +10,14 @@ import WhyUs from './components/whyUs/WhyUs';
 import './landingPage.css';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
-    <CommonLayout>
-      <HeroSection />
+    <CommonLayout page="landingPage">
+      <HeroSection navigate={navigate} />
       <OurServices />
       <WhyUs />
       <Testimony />
-      <CtaBanner />
+      <CtaBanner navigate={navigate} />
       <Faq />
     </CommonLayout>
   );

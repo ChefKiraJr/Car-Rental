@@ -8,9 +8,13 @@ import {
   TwitchLogo,
 } from './Dummy';
 
-const Footer = () => {
+const Footer = ({ page }) => {
   return (
-    <div className="footer-container">
+    <div
+      className={
+        page === 'landingPage' ? 'footer-container' : 'footer-container__bottom'
+      }
+    >
       <div className="footer-content">
         <div className="footer-address">
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>

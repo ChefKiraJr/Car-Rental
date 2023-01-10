@@ -20,7 +20,7 @@ const Faq = () => {
             <ArrowIcon />
           </div>
           <div className="faq__list-item">
-            <p>Berapa hari sebelumnya sabaiknya booking sewa mobil?</p>
+            <p>Berapa hari sebelumnya sebaiknya booking sewa mobil?</p>
             <ArrowIcon />
           </div>
           <div className="faq__list-item">

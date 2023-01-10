@@ -1,14 +1,14 @@
-import React from "react";
-import "./commonLayout.css";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+import React from 'react';
+import './commonLayout.css';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 const CommonLayout = (props) => {
   return (
     <>
       <Header />
       {props.children}
-      <Footer />
+      <Footer page={props.page} />
     </>
   );
 };

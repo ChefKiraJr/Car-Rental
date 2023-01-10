@@ -1,17 +1,13 @@
-import { Input, Button, Select } from '@chakra-ui/react';
+import { Button, Input, Select } from '@chakra-ui/react';
 import React from 'react';
-import { useNavigate } from 'react-router';
-import CommonLayout from '../../components/commonLayout/CommonLayout';
-import HeroSection from '../landingPage/components/heroSection/HeroSection';
-import './carSearch.css';
+import './resultForm.css';
 
-const CarSearch = () => {
-  const navigate = useNavigate();
+const ResultForm = () => {
   return (
-    <CommonLayout>
-      <HeroSection page="carSearch" />
-      <div className="car-search__main">
-        <div className="car-search__input">
+    <div className="result-form__main">
+      <div className="result-form__header">Pencarianmu</div>
+      <div className="result-form__content">
+        <div className="result-form__input">
           <p>Nama Mobil</p>
           <Input
             placeholder="Ketik nama/tipe mobil"
@@ -21,10 +17,10 @@ const CarSearch = () => {
             lineHeight="18px"
             fontFamily="Rubik"
             fontStyle="normal"
-            w="208px"
+            w="221px"
           />
         </div>
-        <div className="car-search__input">
+        <div className="result-form__input">
           <p>Kategori</p>
           <Select
             placeholder="Masukan Kapasitas Mobil"
@@ -34,53 +30,51 @@ const CarSearch = () => {
             lineHeight="18px"
             fontFamily="Rubik"
             fontStyle="normal"
-            w="208px"
+            w="221px"
           />
         </div>
-        <div className="car-search__input">
-          <p>Harga</p>
+        <div className="result-form__input">
+          <p>Nama Mobil</p>
           <Select
-            placeholder="Masukan Harga Sewa per Hari"
+            placeholder="Masukan Kapasitas Mobil"
             color="#8A8A8A"
             fontSize="12px"
             fontWeight="400"
             lineHeight="18px"
             fontFamily="Rubik"
             fontStyle="normal"
-            w="208px"
+            w="221px"
           />
         </div>
-        <div className="car-search__input">
-          <p>Status</p>
+        <div className="result-form__input">
+          <p>Nama Mobil</p>
           <Select
-            placeholder="Status Penyewaan"
+            placeholder="Masukan Kapasitas Mobil"
             color="#8A8A8A"
             fontSize="12px"
             fontWeight="400"
             lineHeight="18px"
             fontFamily="Rubik"
             fontStyle="normal"
-            w="219px"
+            w="221px"
           />
         </div>
         <Button
-          className="car-search__button"
-          backgroundColor="#5CB85F"
-          color="white"
-          borderRadius="2px"
+          className="result-form__button"
           padding="8px 12px"
-          w="92px"
-          h="36px"
-          fontSize="14px"
+          color="#0D28A6"
           fontWeight="700"
+          fontSize="14px"
           lineHeight="20px"
-          onClick={() => navigate('/search-result')}
+          backgroundColor="#fff"
+          border="1px solid #0D28A6"
+          borderRadius="2px"
         >
-          Cari Mobil
+          Edit
         </Button>
       </div>
-    </CommonLayout>
+    </div>
   );
 };
 
-export default CarSearch;
+export default ResultForm;

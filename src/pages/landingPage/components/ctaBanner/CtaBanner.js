@@ -2,7 +2,7 @@ import React from 'react';
 import './ctaBanner.css';
 import { Button } from '@chakra-ui/react';
 
-const CtaBanner = () => {
+const CtaBanner = ({ navigate }) => {
   return (
     <div className="banner__container">
       <div className="banner__content">
@@ -21,6 +21,10 @@ const CtaBanner = () => {
           padding="8px 12px"
           w="140px"
           h="36px"
+          fontSize="14px"
+          fontWeight="700"
+          lineHeight="20px"
+          onClick={() => navigate('/car-search')}
         >
           Mulai Sewa Mobil
         </Button>

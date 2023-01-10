@@ -1,9 +1,9 @@
 import React from 'react';
 import './heroSection.css';
-import carImage from '../../../../assets/images/mercedes_car.png';
+import carImage from '../../../../assets/images/img_car.png';
 import { Button } from '@chakra-ui/react';
 
-const HeroSection = () => {
+const HeroSection = ({ navigate, page }) => {
   return (
     <div className="hero-section__container">
       <div className="hero-section__content">
@@ -23,15 +23,17 @@ const HeroSection = () => {
           padding="8px 12px"
           w="140px"
           h="36px"
+          fontSize="14px"
+          fontWeight="700"
+          lineHeight="20px"
+          onClick={() => navigate('/car-search')}
+          visibility={page === 'carSearch' && 'hidden'}
         >
           Mulai Sewa Mobil
         </Button>
-        <img
-          src={carImage}
-          alt="mercedes-car"
-          className="hero-section__photo"
-        />
-        <div className="hero-section__image-background"></div>
+        <div className="hero-section__photo">
+          <img src={carImage} alt="mercedes-car" />
+        </div>
       </div>
     </div>
   );

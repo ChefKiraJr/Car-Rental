@@ -5,7 +5,6 @@
 
 .faq__content {
   max-width: 1168px;
-  /* height: 344px; */
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -41,13 +40,13 @@
 
 .faq__list-item {
   width: 668px;
-  height: 56px;
   border: 1px solid #d4d4d4;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 0;
   padding-left: 24px;
   padding-right: 16px;
 }
@@ -68,9 +67,20 @@
   .faq__text {
     text-align: center;
     margin-bottom: 4px;
+    align-items: center;
+  }
+
+  .faq__text p {
+    max-width: 328px;
   }
 
   .faq__list-item {
     width: 100%;
+    padding: 16px 16px;
+    gap: 8px;
+  }
+
+  .faq__list-item p {
+    max-width: 248px;
   }
 }

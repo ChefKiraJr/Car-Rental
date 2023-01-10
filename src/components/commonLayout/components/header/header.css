@@ -4,17 +4,20 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  padding-left: 16px;
+  padding-right: 25px;
   background-color: #f1f3ff;
 }
 
 .header-content {
   max-width: 1168px;
-  height: 35px;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -26,10 +29,8 @@
 
 .header-nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 32px;
-  margin-right: 113px;
 }
 
 .header-nav p {
@@ -39,4 +40,40 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+}
+
+.drawer-button {
+  display: none;
+  position: absolute;
+  right: -40px;
+  cursor: pointer;
+}
+
+.drawer-nav__head {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.drawer-nav__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.drawer-nav__body p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .drawer-button {
+    right: 25px;
+  }
+  .header-nav {
+    display: none;
+  }
 }
