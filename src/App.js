@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/car-search" element={<CarSearch />} />
           <Route path="/search-result" element={<SearchResult />} />
-          <Route path="/car-detail" element={<CarDetail />} />
+          <Route path="/car-detail/:anak" element={<CarDetail />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

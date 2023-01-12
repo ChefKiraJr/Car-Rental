@@ -1,20 +1,35 @@
 .car-catalogue__container {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-  max-width: 1047px;
+  max-width: 1079px;
   margin: auto;
+  padding: 0 16px;
+  padding-bottom: 165px;
 }
 
 .car-catalogue__card {
+  width: 333px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 24px;
   gap: 24px;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  max-width: 333px;
+}
+
+.car-catalogue__image {
+  width: 285px;
+  height: 222px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-catalogue__card img {
+  aspect-ratio: auto;
 }
 
 .car-catalogue__card-information {
@@ -42,4 +57,11 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+}
+
+.car-catalogue__availability {
+  font-weight: 600;
+  font-size: 30px;
+  margin: auto;
+  max-width: 1047px;
 }
