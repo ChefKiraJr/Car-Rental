@@ -1,1 +1,29 @@
+.testimony-slider__prev {
+  position: relative;
+  top: 275px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  padding-right: 150px;
+  cursor: pointer;
+  z-index: 5;
+}
 
+.testimony-slider__next {
+  position: relative;
+  top: 31px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  padding-left: 150px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+@media (max-width: 1024px) {
+  .testimony-slider__prev {
+    top: 394px;
+  }
+}

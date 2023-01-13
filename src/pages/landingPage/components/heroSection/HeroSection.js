@@ -1,6 +1,7 @@
 import React from 'react';
 import './heroSection.css';
-import carImage from '../../../../assets/images/img_car.png';
+import largeCar from '../../../../assets/images/mercedes_large.png';
+import smallCar from '../../../../assets/images/mercedes_small.png';
 import { Button } from '@chakra-ui/react';
 
 const HeroSection = ({ navigate, page }) => {
@@ -31,8 +32,11 @@ const HeroSection = ({ navigate, page }) => {
         >
           Mulai Sewa Mobil
         </Button>
-        <div className="hero-section__photo">
-          <img src={carImage} alt="mercedes-car" />
+        <div className="hero-section__photo-large">
+          <img src={largeCar} alt="mercedes-car" />
+        </div>
+        <div className="hero-section__photo-small">
+          <img src={smallCar} alt="mercedes-car" />
         </div>
       </div>
     </div>

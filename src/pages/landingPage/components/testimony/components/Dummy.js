@@ -35,4 +35,51 @@ export const RatingIcon = () => {
   );
 };
 
+export const PrevButton = ({ onClick }) => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+      className="testimony-slider__prev"
+    >
+      <circle cx="16" cy="16" r="15.5" fill="white" stroke="#C4C4C4" />
+      <path
+        d="M18.5 21L13.5 16L18.5 11"
+        stroke="#222222"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const NextButton = ({ onClick }) => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+      className="testimony-slider__next"
+    >
+      <circle cx="16" cy="16" r="16" fill="#5CB85F" />
+      <rect width="20" height="20" transform="translate(6 6)" fill="#5CB85F" />
+      <path
+        d="M13.5 21L18.5 16L13.5 11"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
 export default Dummy;

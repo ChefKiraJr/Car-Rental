@@ -12,10 +12,8 @@
 }
 
 .testimony-detail__avatar {
-  background-color: black;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
 }
 
 .testimony-detail__main {
