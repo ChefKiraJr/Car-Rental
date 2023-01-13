@@ -1,5 +1,5 @@
 .car-search__form {
-  z-index: 1000;
+  z-index: 50;
   position: absolute;
   width: 1047px;
   top: 458px;
