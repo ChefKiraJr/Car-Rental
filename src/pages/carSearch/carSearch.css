@@ -1,4 +1,4 @@
-.car-search__main {
+.car-search__form {
   z-index: 1000;
   position: absolute;
   width: 1047px;
@@ -13,7 +13,6 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .car-search__main:focus-within {
