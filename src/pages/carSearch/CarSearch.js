@@ -37,7 +37,7 @@ const CarSearch = () => {
   return (
     <CommonLayout>
       <HeroSection page="carSearch" />
-      <div className="car-search__form">
+      <div className="car-search__main">
         <div className="car-search__input">
           <p>Nama Mobil</p>
           <Input
