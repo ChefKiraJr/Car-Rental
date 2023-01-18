@@ -6,7 +6,13 @@ import { Button } from '@chakra-ui/react';
 
 const HeroSection = ({ navigate, page }) => {
   return (
-    <div className="hero-section__container">
+    <div
+      className={
+        page === 'carSearch'
+          ? 'hero-section__search'
+          : 'hero-section__container'
+      }
+    >
       <div className="hero-section__content">
         <div className="hero-section__main-text">
           Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
@@ -32,10 +38,19 @@ const HeroSection = ({ navigate, page }) => {
         >
           Mulai Sewa Mobil
         </Button>
-        <div className="hero-section__photo-large">
+        <div
+          className={
+            page === 'carSearch'
+              ? 'hero-section__photo-search'
+              : 'hero-section__photo-large'
+          }
+        >
           <img src={largeCar} alt="mercedes-car" />
         </div>
-        <div className="hero-section__photo-small">
+        <div
+          className="hero-section__photo-small"
+          style={{ display: page === 'carSearch' && 'none' }}
+        >
           <img src={smallCar} alt="mercedes-car" />
         </div>
       </div>

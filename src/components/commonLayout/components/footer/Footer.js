@@ -12,7 +12,9 @@ const Footer = ({ page }) => {
   return (
     <div
       className={
-        page === 'landingPage' ? 'footer-container' : 'footer-container__bottom'
+        page === 'carSearch' || page === 'noResult'
+          ? 'footer-container__bottom'
+          : 'footer-container'
       }
     >
       <div className="footer-content">

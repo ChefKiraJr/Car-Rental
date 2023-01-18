@@ -9,6 +9,7 @@
 .testimony__content {
   width: 100%;
   margin: auto;
+  padding: 0 16px;
 }
 
 .testimony__header {
@@ -32,4 +33,8 @@
   line-height: 20px;
   text-align: center;
   color: #000000;
+}
+
+.dummy-panel {
+  position: relative;
 }

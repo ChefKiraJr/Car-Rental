@@ -12,7 +12,7 @@ import './landingPage.css';
 const LandingPage = () => {
   const navigate = useNavigate();
   return (
-    <CommonLayout page="landingPage">
+    <CommonLayout>
       <HeroSection navigate={navigate} />
       <OurServices />
       <WhyUs />

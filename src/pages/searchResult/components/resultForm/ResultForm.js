@@ -1,43 +1,14 @@
-import { Input, Button, Select } from '@chakra-ui/react';
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
-import queryString from 'query-string';
-import CommonLayout from '../../components/commonLayout/CommonLayout';
-import HeroSection from '../landingPage/components/heroSection/HeroSection';
-import './carSearch.css';
+import { Button, Input, Select } from '@chakra-ui/react';
+import React from 'react';
+import './resultForm.css';
 
-const CarSearch = () => {
-  const [input, setInput] = useState({
-    name: '',
-    category: '',
-    minPrice: '',
-    maxPrice: '',
-    isRented: '',
-  });
-  const navigate = useNavigate();
-  const handleChange = (e) => {
-    let temp = { ...input };
-    temp[e.target.name] = e.target.value;
-    if (e.target.name === 'minPrice') {
-      if (e.target.value === '0') {
-        temp.maxPrice = '1000000';
-      } else {
-        temp.maxPrice = '';
-      }
-    }
-    setInput(temp);
-  };
-  const handleSubmit = () => {
-    let temp = { ...input };
-    const queries = queryString.stringify(temp);
-    navigate(`/search-result?${queries}`);
-  };
+const ResultForm = ({ input, handleChange, handleEdit }) => {
   return (
-    <CommonLayout page="carSearch">
-      <HeroSection page="carSearch" />
-      <div className="car-search__container">
-        <div className="car-search__main">
-          <div className="car-search__input">
+    <div className="result-form__container">
+      <div className="result-form__main">
+        <div className="result-form__header">Pencarianmu</div>
+        <div className="result-form__content">
+          <div className="result-form__input">
             <p>Nama Mobil</p>
             <Input
               value={input.name}
@@ -49,11 +20,11 @@ const CarSearch = () => {
               lineHeight="18px"
               fontFamily="Rubik"
               fontStyle="normal"
-              w="208px"
+              w="221px"
               onChange={(event) => handleChange(event)}
             />
           </div>
-          <div className="car-search__input">
+          <div className="result-form__input">
             <p>Kategori</p>
             <Select
               value={input.category}
@@ -65,7 +36,7 @@ const CarSearch = () => {
               lineHeight="18px"
               fontFamily="Rubik"
               fontStyle="normal"
-              w="208px"
+              w="221px"
               onChange={(event) => handleChange(event)}
             >
               <option value="small">2 - 4 orang</option>
@@ -73,7 +44,7 @@ const CarSearch = () => {
               <option value="large">6 - 8 orang</option>
             </Select>
           </div>
-          <div className="car-search__input">
+          <div className="result-form__input">
             <p>Harga</p>
             <Select
               value={input.minPrice}
@@ -85,14 +56,14 @@ const CarSearch = () => {
               lineHeight="18px"
               fontFamily="Rubik"
               fontStyle="normal"
-              w="208px"
+              w="221px"
               onChange={(event) => handleChange(event)}
             >
               <option value="0">{`Rp 0 - Rp 1.000.000`}</option>
               <option value="1000001">{`> Rp 1.000.000`}</option>
             </Select>
           </div>
-          <div className="car-search__input">
+          <div className="result-form__input">
             <p>Status</p>
             <Select
               value={input.isRented}
@@ -104,7 +75,7 @@ const CarSearch = () => {
               lineHeight="18px"
               fontFamily="Rubik"
               fontStyle="normal"
-              w="219px"
+              w="221px"
               onChange={(event) => handleChange(event)}
             >
               <option value="false">Disewakan</option>
@@ -112,24 +83,23 @@ const CarSearch = () => {
             </Select>
           </div>
           <Button
-            className="car-search__button"
-            backgroundColor="#5CB85F"
-            color="white"
-            borderRadius="2px"
+            className="result-form__button"
             padding="8px 12px"
-            w="92px"
-            h="36px"
-            fontSize="14px"
+            color="#0D28A6"
             fontWeight="700"
+            fontSize="14px"
             lineHeight="20px"
-            onClick={() => handleSubmit()}
+            backgroundColor="#fff"
+            border="1px solid #0D28A6"
+            borderRadius="2px"
+            onClick={() => handleEdit()}
           >
-            Cari Mobil
+            Edit
           </Button>
         </div>
       </div>
-    </CommonLayout>
+    </div>
   );
 };
 
-export default CarSearch;
+export default ResultForm;

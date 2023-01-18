@@ -1,7 +1,12 @@
+.car-search__container {
+  width: 100%;
+  padding: 0 16px;
+}
+
 .car-search__main {
   z-index: 100;
-  position: absolute;
-  top: 458px;
+  position: relative;
+  top: -155px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -11,6 +16,7 @@
   border-radius: 8px;
   padding: 24px 24px;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
 }

@@ -6,11 +6,11 @@ import { useNavigate } from 'react-router';
 const CarCatalogue = ({ data }) => {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="car-catalogue__container">
       {data && (
         <>
           {data.cars.length > 0 ? (
-            <div className="car-catalogue__container">
+            <div className="car-catalogue__main">
               {data.cars.map((value, index) => {
                 return (
                   <div className="car-catalogue__card" key={value.id}>
@@ -53,7 +53,7 @@ const CarCatalogue = ({ data }) => {
           )}
         </>
       )}
-    </>
+    </div>
   );
 };
 

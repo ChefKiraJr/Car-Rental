@@ -4,3 +4,9 @@
   background-color: #f1f3ff;
   margin-bottom: 80px;
 }
+
+@media (max-width: 1047px) {
+  .car-detail__header {
+    display: none;
+  }
+}
