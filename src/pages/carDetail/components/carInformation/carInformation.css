@@ -117,3 +117,9 @@
   line-height: 20px;
   color: #000000;
 }
+
+@media (max-width: 1047px) {
+  .car-information__container {
+    padding-top: 100px;
+  }
+}
